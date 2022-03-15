@@ -1,5 +1,5 @@
 addEventListener("DOMContentLoaded", async(e)=>{
-    let peticion = await fetch("menu.php");
+    let peticion = await fetch("https://adrianfillippo.000webhostapp.com/Ejercicio_Maquetacion_PHP_28_02_2022/menu.php");
     let json = await peticion.json();
     console.log(json);
     document.querySelector(".logo").insertAdjacentHTML("beforeend", json.imagen);
